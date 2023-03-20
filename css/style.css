@@ -1,0 +1,849 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+   
+    
+}
+
+
+/* main*/
+
+main{
+   
+    margin-top: 100px;
+ }
+
+
+
+/* navbar  */
+
+/* lien navigation */
+nav{
+   background-color: #00b39b;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   position: fixed;
+   top: 0;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0 -2px 10px 0 rgba(0,0,0,.15);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 ;
+    width: 70vw;    
+}
+
+ul{
+    display: flex;
+    
+}
+
+ul li{
+ margin-left: 20px;
+}
+
+li:first-child a {
+    color: #00b39b;
+}
+
+li a{
+    color:  #747474;
+}
+
+li a:hover{
+color:  #00b39b;;
+}
+
+/* logo */
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.logo img{
+    margin-right: 10px;
+}
+
+.logo span{
+    color: #00b39b;;
+}
+.logo h1{
+    color:  #747474bd;
+    font-size: 30px;
+    font-weight: 400;
+    
+}
+
+
+/* lien dropdown */
+.dropdown{
+position: relative;
+display: inline-block;
+
+}
+
+
+.dropdown_content{
+display: none;
+position: absolute;
+min-width: 250px;
+background-color: white;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+
+
+
+}
+
+.dropdown_content a{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #747474b6;
+    
+    
+    
+}
+.dropdown_content a:hover{
+    background-color: aliceblue;
+}
+
+.dropdown_content:hover{
+    background-color: white;
+}
+
+.dropdown:hover .dropdown_content{
+    display: block;
+    
+}
+
+
+
+
+/* section1 head */
+
+.section1{
+   
+    display: flex;
+    justify-content: center;
+}
+
+.head{
+    padding: 20px 0;
+    height: 100%;
+    width: 70vw;
+    display: grid;
+    grid-template-columns:  47% 47%;
+    grid-template-rows: 40% 70% ;
+    grid-template-areas: 
+    "header header"
+    "p1 P2";
+    gap: 50px 0px;
+   justify-content: space-around;
+  
+
+}
+.head header{grid-area:header;}
+.note1{grid-area:p1;}
+.note2{grid-area:P2}
+
+.head header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.head header img{
+    
+    width: 40px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+.head header h1{
+    color: #00b39b;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    
+}
+.head p{
+ 
+    color: #747474;
+    line-height: 30px;
+    
+}
+
+
+/* section2 secteur */
+
+.section2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+  
+}
+
+.secteur{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.secteur-item{ 
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    
+   
+   
+}
+
+.secteur-item:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.secteur h1{
+    color: white;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.secteur h2{
+   color: white;
+    font-weight: 300;
+    height: 60px;
+   
+}
+.icone{
+    margin-bottom:10px ;
+}
+
+#patient{
+ background-color: #00b39b;
+}
+#medecin{
+    background-color: rgb(85, 85, 230);
+    margin: 0 30px;
+}
+#clinique{
+    background-color: rgba(9, 4, 24, 0.911);
+    
+}
+
+
+
+/* select patient */
+
+.patient{
+    height: 80vh;
+   
+}
+
+.select-patient{
+    margin-top: 45px;
+    margin-bottom: 25px;
+    height: 10vh;
+  
+}
+.select-patient select{
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    outline: none;
+     background-color: #00b39b;
+    
+    
+    
+}
+
+select option {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+  
+
+}
+
+/* select medecin */
+
+.medecin{
+   
+    height: 80vh;
+}
+
+.select-medecin{
+    border: none;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    height: 10vh;
+  
+
+}
+.select-medecin select{
+   border: none;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    outline: none;
+    background-color: rgb(85, 85, 230);
+   
+     
+}
+
+select option {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+}
+
+
+
+/* select clinique */
+
+.clinique{
+   
+    height: 80vh;
+}
+.select-clinique{
+    margin: 30px 0;
+    height: 20vh;
+   
+  
+}
+.select-clinique select{
+   border: none;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    outline: none;
+    background-color: rgba(26, 22, 39, 0.089);
+    margin-top: 10px;
+    
+   
+}
+
+select option {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+  
+
+}
+
+/* section3 link */
+
+.section3{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.link{
+  
+    display: flex; 
+    justify-content: space-between;
+    width: 70vw  ;
+    align-items: start;
+    height: 200px  ;
+    margin: 50px 0 ;
+   
+}
+
+.link h1{
+    width: 250px;
+    font-weight: normal;
+    font-size: 26px;
+    color: #00b39b;
+    font-weight: 300;
+    line-height: 40px;
+     
+}
+
+
+.link ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 70%;
+    align-items: center;
+    height: 200px;
+    padding-left:40px ;
+
+}
+
+.logos  li {
+    height: 40px;
+    width: 140px; 
+    margin-left: 10px 40px; 
+  
+}
+
+li a img{
+    width:100px;
+    height: 30px;
+    
+   
+}
+li a img:hover{
+    transform: scale(1.1);
+}
+
+ .link-logo{
+    width: 125px;
+    height: 25px;
+    object-fit: cover;
+    margin-right: 10px;
+    fill: #7474748c;
+  
+ }
+
+ .link-logo:hover{
+    cursor: pointer;
+    fill: #00b39b;
+
+ }
+ 
+
+ /* section platform */
+
+
+.sec-platform{
+    background-color: #00b39b23;
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+
+}
+
+
+ .platform{
+    width: 70vw;
+    height: 90vh; 
+    display: flex;
+
+ }
+
+ .platform header{
+
+    width: 35vw;
+    height: 100vh;
+
+   
+
+ }
+
+ /* right */
+ .platform .right{
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+   
+ }
+ #sel1,#sel2{
+    
+    margin-top: 20px;
+ }
+
+ .right .right-items{
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 45%;
+    height: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px  ;
+    padding: 5px;
+    border-radius: 5px;
+    
+ }
+
+
+ .right-items img{ 
+    width: 20%;
+ }
+
+ .right-items h1{
+    font-size: 25px;
+    color: #00b39b;
+    font-weight: normal;
+ }
+
+ .right-items p{
+   font-size: 13px;
+   color: #747474;
+   width: 15vw
+   
+ }
+
+ /* left  platform*/
+
+.header-platform{
+    height: 50vh;
+    margin-top: 50px;
+    width: 33vw;
+
+}
+
+.platform .header-platform h1{
+    width: 80%;
+    margin-bottom: 30px;
+    color: #00b39b;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+
+.header-platform p{
+line-height: 20px;
+font-size: 13px;
+width: 70%;
+color: #747474;
+}
+
+.platform .logo-p{
+    margin-top:1%;
+    width: 80%;
+    right: 100%;
+    height: 80%;
+    object-fit: cover;
+    
+   
+}
+
+
+
+/* section ouverture avec la galeries des photo */
+
+
+/*  la section */
+
+.ouverture{
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+      
+}
+
+/* header de la section */
+
+.ouverture header{
+ 
+    width: 40vw;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+
+/* h1 de la section titre */
+.ouverture header h1{
+    color: #00b39b;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+/* paragraphe de la section */
+
+.ouverture header p{
+    color: #747474;
+    font-size: 15px;
+}
+
+
+/* le container de tout les cartes  */
+
+.galerie{
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px ;
+    width: 70vw;
+    height: 100%;
+    justify-content: center;
+}
+
+/* la classe pour chaque carte contenant une photo un p et une bouton : ici la classe photo represente le div contenant tout*/
+
+.galerie .photo{
+    width:300px ;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.galerie .photo:hover{
+    box-shadow:  0px 10px 16px 0px rgba(0,0,0,.3);
+    
+}
+
+
+
+/* la carte represente la photo dans le div photo le haut */
+.photo .carte{
+    width: 100%;
+    height:70vh;
+   
+   
+}
+
+/* name represente le bas de la div photo */
+.name{
+   
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(255, 251, 251);
+}
+
+
+/* bnt represente la bouton en bas de la carte */
+
+
+.btn{
+    /* margin-top: 20px; */
+    padding: 10px;
+    color: white;
+    background-color: #4269d3d0;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    font-size: 10px;
+}
+
+.btn:hover{
+    background-color: #4269d3;
+}
+
+/* paragraphe a coté de la bouton en bas de la carte */
+
+.name p{
+    font-size: 20px;
+    color: #5a5959;
+
+}
+
+
+/* le pied de la section apres les cartes */
+
+
+/* pied */
+
+.pied{
+    margin-bottom: 100px;
+}
+
+
+.pied h1{
+    font-size: 30px;
+    font-weight: normal;
+    width: 500px;
+    color: #424141;
+}
+
+/* bouton du pied de la section couverture */
+
+.pied .btn-pied{
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #4269d3d0;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+.pied .btn-pied:hover{
+    background-color: #4269d3;
+}
+
+
+/* footer pied de page  */
+
+footer{
+    text-align: center;
+    font-size: 12px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #747474;
+    border-top: 1px solid rgba(128, 128, 128, 0.212);
+}
+
+footer .p-footer{
+    margin-top: 20px;
+   
+}
+footer .p-footer a{
+    color: rgb(67, 67, 228);
+}
+.p-footer a:hover{
+    text-decoration: underline;
+}
+
+  
+
+
+
+
+/* ---------------------------responsive------------------- */
+
+@media screen and (max-width: 1080px) {
+    /* section platform section 4 */
+
+   
+ .sec-platform{
+    height: 100%;
+} 
+
+
+  .platform{
+    height: 100% ;
+     display: flex;
+     flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+
+
+ } 
+
+  /* left  platform*/
+
+.header-platform{
+    height: 100%;
+    margin-top: 50px;
+    text-align: center;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.platform .header-platform h1{
+    
+    margin-bottom: 30px;
+    color: #00b39b;
+    font-weight: normal;
+    font-size: 40px;
+    
+}
+
+
+.header-platform p{
+line-height: 20px;
+font-size: 15px;
+color: #747474;
+width: 100%;
+
+}
+
+.platform .logo-p{
+    margin:20px;
+    opacity: 0.1;
+     width: 700px;
+    object-fit: cover;
+    
+     
+    
+}
+
+
+ /* right */
+ .platform .right{
+    /* height: 100vh; */
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+   
+   
+ }
+ #sel1,#sel2{
+    
+    margin-top: 20px;
+ }
+
+ .right .right-items{
+    background-color: rgb(255, 255, 255);
+    width: 45%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px  ;
+    padding: 5px;
+    border-radius: 5px;
+    
+ }
+
+
+ .right-items img{ 
+    width: 20%;
+ }
+
+ .right-items h1{
+    font-size: 25px;
+    color: #00b39b;
+    font-weight: normal;
+ }
+
+ .right-items p{
+   font-size: 13px;
+   color: #747474;
+   width: 15vw
+   
+ }
+}
+
+
+ 
